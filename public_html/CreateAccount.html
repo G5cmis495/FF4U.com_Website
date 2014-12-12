@@ -3,6 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -12,14 +13,15 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-
+        
+        
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+     
         <div class="header-container">
             <header class="wrapper clearfix">
                 <h1 class="title">Welcome to Fantasyfootball4U!!</h1>
@@ -29,12 +31,15 @@
 
         <div class="main-container">
             <div class="main wrapper clearfix">
-
-                <article>
+                
                     <header>
                         <h1>Create your free account</h1>
                         
-                         <form action= "LoginPage.html" autocomplete="on">
+                         <form action= "UserAccount.php" method="post">
+                             <p>Username: <input type="text" name="username" required="required" /></p>
+                             <p>Password: <input type="text" name="password" required="required" /></p>
+                             <p>Retype Password: <input type="text" name="password" required="required" /></p>
+                        <!--
                         <p> 
                             <label for="username" class="uname" data-icon="u" >Username:</label>
                             <input id="username" name="username" required="required" type="text" placeholder="Username"/>       
@@ -47,15 +52,17 @@
                              <label for="password" class="youpasswd" data-icon="p">Retype Password:</label>
                              <input id="password" name="password" required="required" type="password" placeholder="Retype Password" /> 
                         </p>
-
+                         -->
                         <p class="keeplogin"> 
                              <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
                              <label for="loginkeeping">Keep me logged in</label>
                         </p>
-                        <p class="create account"> 
+                        <p> 
                              <input type="submit" value="Create Account"> 
-                        </p>
+                        </p> 
+                        </form>
                     </header>
+                    
                     
                     <aside>
                         <img src="img/webIcon.png">

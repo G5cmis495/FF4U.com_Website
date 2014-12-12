@@ -37,25 +37,14 @@
         <div class="main-container">
             <div class="main wrapper clearfix">
                 <article>
-                    <header>
-                        <h1>Rules to creating your own team</h1>
-                        <p>Before you start creating your own team there are a few things you must know.  
-                            A team comprises of 4 quarterbacks, 8 running backs, 8 wide receivers, 
-                            3 tight ends, 3 kickers, 3 defense players, and 3 special teams players, 
-                            with a total of 32 players. 
-                        </p>
-                    </header>
                     <section>
-                        <h2>Let's Get Started!</h2>
-                        <p>Get all NFL stats from <a href="http://espn.go.com/nfl/statistics">ESPN</a>.</p>
-                        <p>Pick 4 quarterbacks</p>
-                        <p>Pick 8 running backs</p>
-                        <p>Pick 8 wide receivers</p>
-                        <p>Pick 3 tight ends</p>
-                        <p>Pick 3 kickers</p>
-                        <p>Pick 3 defense players</p>
-                        <p>Pick 4 special teams players</p>
+                        <h2>Let's Get Started!</h2> 
+                        <form action= "League.php" method="post">
+                             <p>League to Join: <input type="text" name="leagueName" required="required" /></p>
                              
+                             <p><input type="submit" value="Create League"></p> 
+                         
+                        </form>
                     </section>
                 </article>
                 <aside>

@@ -38,25 +38,55 @@
             <div class="main wrapper clearfix">
                 <article>
                     <header>
-                        <h1>Rules to creating your own team</h1>
-                        <p>Before you start creating your own team there are a few things you must know.  
-                            A team comprises of 4 quarterbacks, 8 running backs, 8 wide receivers, 
-                            3 tight ends, 3 kickers, 3 defense players, and 3 special teams players, 
-                            with a total of 32 players. 
+                        <h1>Rules to picking your starting lineup</h1>
+                        <p>Before you you pick your starting lineup, there are a few things you must know.  
+                            A Starting Lineup comprises of:<br>
+                            1 quarterback<br>
+                            2 running backs<br>
+                            1 flex player<br>
+                            2 wide receivers<br>
+                            1 tight end<br>
+                            1 kickers<br>
+                            1 defense player<br>
+                            1 special teams player<br>
+                            7 bench players<br><br>
+                            Total of 17 players 
                         </p>
                     </header>
                     <section>
                         <h2>Let's Get Started!</h2>
                         <p>Get all NFL stats from <a href="http://espn.go.com/nfl/statistics">ESPN</a>.</p>
-                        <p>Pick 4 quarterbacks</p>
-                        <p>Pick 8 running backs</p>
-                        <p>Pick 8 wide receivers</p>
-                        <p>Pick 3 tight ends</p>
-                        <p>Pick 3 kickers</p>
-                        <p>Pick 3 defense players</p>
-                        <p>Pick 4 special teams players</p>
+                         <form action= "Team.php" method="post">
+                             <p>Team Name: <input type="text" name="teamName" required="required" /></p>
+                             <p>StartingQB: <input type="text" name="StartingQB" required="required" /></p>
                              
-                    </section>
+                             <p>StartingRB1: <input type="text" name="StartingRB1" required="required" /></p>
+                             <p>StartingRB2: <input type="text" name="StartingRB2" required="required" /></p>
+
+                             <p>StartingFlex: <input type="text" name="flex" required="required" /></p>
+                             
+                             <p>StartingWR1: <input type="text" name="StartingWR1" required="required" /></p>
+                             <p>StartingWR2: <input type="text" name="StartingWR2" required="required" /></p>
+                             
+                             <p>StartingTE: <input type="text" name="StartingTE" required="required" /></p>
+                             
+                             <p>StartingK: <input type="text" name="StartingK" required="required" /></p>
+                             
+                             <p>StartingD: <input type="text" name="StartingD" required="required" /></p>
+                             
+                             <p>StartingST: <input type="text" name="StartingST" required="required" /></p>
+                             
+                             <p>StartingB1: <input type="text" name="StartingB1" required="required" /></p>
+                             <p>StartingB2: <input type="text" name="StartingB2" required="required" /></p>
+                             <p>StartingB3: <input type="text" name="StartingB3" required="required" /></p>
+                             <p>StartingB4: <input type="text" name="StartingB4" required="required" /></p>
+                             <p>StartingB5: <input type="text" name="StartingB5" required="required" /></p>
+                             <p>StartingB6: <input type="text" name="StartingB6" required="required" /></p>
+                             <p>StartingB7: <input type="text" name="StartingB7" required="required" /></p>
+
+                             <input type="submit" value="Change Starting Lineup"> 
+                         
+                        </form>
                 </article>
                 <aside>
                     <h3></h3>

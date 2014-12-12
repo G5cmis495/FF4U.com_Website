@@ -38,7 +38,7 @@
             <div class="main wrapper clearfix">
                 <article>
                     <header>
-                        <h1>Rules to creating your own league:</h1>
+                        <h2>Rules to creating your own league:</h2>
                         <p>Before you start creating your own league there are a few things you must know.  
                             A league cannot contain an odd number of teams.  A league must consist of 10, 12, 14, or 16 teams.  
                             You may not create a league with less than 10 teams and more than 16 teams. 
@@ -46,16 +46,18 @@
                     </header>
                     <section>
                         <h2>Let's Get Started!</h2> 
-                        <h3>How many teams would you like on your league?</h3>
-                        <a href="#">10</a>
-                        <a href="#">12</a>
-                        <a href="#">14</a>
-                        <a href="#">16</a>
+                        <form action= "League.php" method="post">
+                             <p>League Name: <input type="text" name="leagueName" required="required" /></p>
+                             <p>Number of teams in League: <input type="number" name="NumOfTeam" required="required" /></p>
+
+                             <p><input type="submit" value="Create League"></p> 
+                         
+                        </form>
                     </section>
                 </article>
                 <aside>
-                    <p><img src="webIcon.png"/></p>
-                    <p><img src="nflLogo.jpg"/></p>
+                    <p><img src="img/webIcon.png"/></p>
+                    <p><img src="img/nflLogo.jpg"/></p>
                 </aside>
             </div> <!-- #main -->
         </div> <!-- #main-container -->
